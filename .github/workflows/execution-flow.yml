@@ -76,7 +76,7 @@ jobs:
       - name: Deploy
         run: echo "Deploying..."
   report:
-  if: failure() # if any other jobs failure
+    if: failure() # if any other jobs failure
     runs-on: ubuntu-latest
     steps:
       - name: Output info
